@@ -5,7 +5,7 @@ install:
 
 script:
   - flake8
-  - pytest
+  - coverage run -m pytest
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
