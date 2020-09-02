@@ -1,6 +1,6 @@
 # Arkanoid
 [![Build Status](https://travis-ci.com/tikerlade/Arkanoid.svg?branch=CLI)](https://travis-ci.com/tikerlade/Arkanoid)
-
+[![codecov](https://codecov.io/gh/tikerlade/Arkanoid/branch/CLI/graph/badge.svg)](https://codecov.io/gh/tikerlade/Arkanoid)
 
 Classic Arkanoid game with web-cam controlling of platform
 
