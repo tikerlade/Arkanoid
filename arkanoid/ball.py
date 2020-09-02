@@ -1,3 +1,7 @@
+import cv2
+
+from arkanoid.block import Block
+
 class Ball:
     # Constructor
     def __init__(self, frame, speed=4):
@@ -69,7 +73,7 @@ class Ball:
                         dist = min_dist
                         block_to_delete = block
 
-        if not ((block_to_delete.x1 == block_to_delete.y1 == 0) and \
+        if not ((block_to_delete.x1 == block_to_delete.y1 == 0) and
                 (block_to_delete.x2 == block_to_delete.y2)):
             center_x = block_to_delete.x1 + 10
             center_y = block_to_delete.y1 + 10

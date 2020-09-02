@@ -8,7 +8,6 @@ from arkanoid.platform import Platform
 from arkanoid.block import Block
 
 
-
 def generate_blocks(frame):
     size = 20
     blocks = []
@@ -44,6 +43,7 @@ if __name__ == "__main__":
     played = False
     while True:
         # Intro
+        ball = Ball()
         key = cv2.waitKey(1)
         _, frame = cap.read()
         frame = cv2.flip(frame, 1)
@@ -117,7 +117,8 @@ if __name__ == "__main__":
                 platform.move(frame, key)
 
                 for block in blocks:
-                    if block.x1 == block.x1 == block.x2 == block.x2 == block.y1 == block.y1 == block.y2 == block.y2 == 0:
+                    if block.x1 == block.x1 == block.x2 == block.x2 ==\
+                            block.y1 == block.y1 == block.y2 == block.y2 == 0:
                         blocks.remove(block)
 
         elif key == 27:
