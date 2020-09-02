@@ -2,6 +2,7 @@ import cv2
 
 from arkanoid.block import Block
 
+
 class Ball:
     # Constructor
     def __init__(self, frame, speed=4):
